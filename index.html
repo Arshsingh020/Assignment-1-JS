@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<!-- Here I have inserted all the buttons-->
+	<!-- The user needs to click on the first 3 buttons to call out phrases so that they can be said aloud-->
+	<button onclick="gPhrase(0)">Generate Noun</button>
+	<button onclick="gPhrase(1)">Generate Verb</button>
+	<button onclick="gPhrase(2)">Generate Adjective</button>
+	<button onclick="gPhrase(3)">Generate Place</button>
+	<!-- After clicking on the buttons, click on this button to speak-->
+	<button onclick="passValueAndSpeak()">Pass Value and Speak</button>
+	<!-- The button for the story-->
+	<button id="generate-btn" onclick="generateStory()">Generate Story</button>
+	<button id="reset-btn" onclick="resetStory()">Reset</button>
+	<div id="story-container"></div>
+
+    <script src="js/app.js"></script>
+	
+
+</body>
+</html>
